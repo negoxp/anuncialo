@@ -1,14 +1,155 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Anuncialo</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>El lugar para encontrar | Anuncialo Rapido</title>
+        
+         <%= stylesheet_link_tag    "application", :media => "all" %>
+  		 <%= javascript_include_tag "application" %>
+  		 <%= csrf_meta_tags %>
+		</head>
+	<body data-spy="scroll" data-target=".navbar"> 
+	
+<div class="navbar navbar-inverse navbar-fixed-top" style="padding:0px;">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            	<li class="hidden-phone" style="width:235px; height:34px;">
+            	<a href="http://stage.anuncialorapido.com/" style="padding:2px;">
+            	<img src="http://www.anuncialorapido.com/img/anuncialorapido-logo.png" alt="Logo" title="AnuncialoRapido.com" style="position:absolute;" />
+            	</a>
+            	</li>
+            	
+            	<li class="visible-phone" style="width:79px; height:34px;">
+            	<a href="http://stage.anuncialorapido.com/" style="padding:2px;">
+            	<img src="http://www.anuncialorapido.com/img/anuncialorapido-logo-one.png" alt="Logo" title="AnuncialoRapido.com" style="position:absolute;" />
+            	</a>
+            	</li>
+            	
+            	<li class="dropdown"><a id="dropinicio" class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Inicio <b class="caret"></b></a>			    	
+          			
+          			<ul aria-labelledby="dropinicio" role="menu" class="dropdown-menu">   
+			            <li><a href="http://stage.anuncialorapido.com/">Inicio</a></li>
+			            <li><a href="http://stage.anuncialorapido.com/?cat=autos">Autos</a></li>  
+			            <li><a href="http://stage.anuncialorapido.com/?cat=casas">Casas</a></li>  
+			            <!--<li><a href="http://stage.anuncialorapido.com/?cat=empleo">Empleo</a></li> --> 
+			            <li><a href="http://stage.anuncialorapido.com/?cat=otros">Otros</a></li> 
+			            <li class="divider"></li>
+			            <li><a href="http://stage.anuncialorapido.com/landing/form-agregaranuncio.php">Agregar Anuncio Gratis</a></li>
+			            <li><a class="fancybox fancybox.ajax" href="http://stage.anuncialorapido.com/landing/procesos.php?accion=login">Entrar</a></li>  
+			            <li><a href='http://stage.anuncialorapido.com/registro'>Registro</a></li>  
+			            <li><a href="http://stage.anuncialorapido.com/revista">Revista</a></li> 
+			            <li class="divider"></li>
+			            <li><a href="http://stage.anuncialorapido.com/ayuda">Ayuda</a></li>
+			            <li><a href="http://stage.anuncialorapido.com/blog"  target="_blank">Blog</a></li>
+			            <li><a href="http://stage.anuncialorapido.com/docs/TerminosYCondicionesAnuncialoRapido.pdf" target="_blank">Términos y Condiciones</a></li>
+			            <li><a href="http://stage.anuncialorapido.com/publicidad">Publicidad</a></li>
+			            <li><a href="http://stage.anuncialorapido.com/?cat=promociones">Patrocinadores</a></li>
+			        </ul>
+				
+				</li>
+              <!--<li class="hidden-phone"><a href="http://stage.anuncialorapido.com/revista">Revista</a></li>-->
+               <li><a class='hidden-phone' href='../registro/'>Registro</a></li><li><a id="loginlink" class="fancybox fancybox.ajax" href="../landing/procesos.php?accion=login">Entrar</a></li>	        	    
+  			<li><a href="http://stage.anuncialorapido.com/?cat=autos" title=" Autos"><img src="http://www.anuncialorapido.com/img/categorias/autosapagado.png" /></a></li>
+  			<li><a href="http://stage.anuncialorapido.com/?cat=casas" title=" Casas"><img src="http://www.anuncialorapido.com/img/categorias/casasapagado.png" /></a></li>
+  			<li><a href="http://stage.anuncialorapido.com/?cat=otros" title=" Otros"><img src="http://www.anuncialorapido.com/img/categorias/otrosapagado.png" /></span></a></li>
+	        
+              <li class="visible-phone"><a  href="http://stage.anuncialorapido.com/landing/form-agregaranuncio.php"><i class="icon-plus icon-white"></i>&nbsp;Agregar</a></li>
+              <!--
+              <li class="dropdown"><a id="drop1" class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Catogorias <b class="caret"></b></a>
+ 		            
+ 		             <ul aria-labelledby="drop1" role="menu" class="dropdown-menu">   
+			            <li><a href="http://stage.anuncialorapido.com/?cat=autos">Autos</a></li>  
+			            <li><a href="http://stage.anuncialorapido.com/?cat=casas">Casas</a></li>  
+			            <li><a href="http://stage.anuncialorapido.com/?cat=empleo">Empleo</a></li>  
+			            <li><a href="http://stage.anuncialorapido.com/?cat=otros">Otros</a></li>
+			            <li class="divider"></li>
+			            <li><a href="http://stage.anuncialorapido.com/revista">Revista</a></li>  
+			        </ul>
+          
+              </li>
+              -->
+              <li class="hidden-desktop"><a class="fancybox fancybox.ajax" href="../landing/procesos.php?accion=buscar"><img src="http://www.anuncialorapido.com/img/icons/lupita.png" alt="Buscar" title="Buscar" align="top"  /></a></li>
+              
+              
+            </ul>
+            <a class="btn hidden-phone" href="http://stage.anuncialorapido.com/landing/form-agregaranuncio.php"><i class="icon-plus"></i>&nbsp;Agregar</a>
+            
+            
+            <div class="input-append pull-right visible-desktop" style="padding-top:5px;">
+					    
+					    <input class="span2" id="appendedInputButton" type="text">
+					    
+					    <button class="btn" type="button">&nbsp;<i class="icon-search"></i></button>
+					    </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid" style="padding-top: 50px;">
+<!-- FIN contains scrolled -->
+
+
+<!-- contains scrolled -->
+<nav id="page-nav">
+  <a href="./inc/inc.recargar.php?pagina=2"></a>
+</nav>
 
 <%= yield %>
 
-</body>
-</html>
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:760px; margin-left:-390px;">
+	<div class="modal-body"></div>
+	<div class="modal-footer">
+		<button class="btw" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+	</div>
+</div>
+
+<center>
+<div id="footer" class="hidden-phone">  
+      <a href="http://www.anuncialorapido.com/img/">Inicio</a><span class="dot divider"> ·</span>
+      <a href="http://www.anuncialorapido.com/img/ayuda">Ayuda</a><span class="dot divider"> ·</span>
+      <a href="http://www.anuncialorapido.com/img/blog"  target="_blank">Blog</a><span class="dot divider"> ·</span>
+      <a href="http://www.anuncialorapido.com/img/docs/TerminosYCondicionesAnuncialoRapido.pdf" target="_blank">Términos y Condiciones</a><span class="dot divider"> ·</span>
+      <a href="http://www.anuncialorapido.com/img/publicidad">Publicidad</a><span class="dot divider"> ·</span>
+     	<span style="margin-right:10px;">
+     	<a href="http://www.anuncialorapido.com/rss/" target="_blank"><div id="rsslink"></div></a>
+	    <a href="http://www.youtube.com/user/Anuncialorapido" target="_blank"><div id="ytlink"></div></a>
+	    <a href="https://twitter.com/AnuncialoRapido" target="_blank"><div id="twitterlink"></div></a>
+	    <a href="http://www.facebook.com/AnuncialoRapido" target="_blank"><div id="fblink"></div></a>
+	    </span>
+      
+      
+      <strong>Versi&oacute;n  2.0 Ruby on Rails</strong>
+      <span class="copyright">&copy; Power By <a href="http://systemark.mx/" target="_blank"><img src="http://www.anuncialorapido.com/img/SYSTEMARK-LOGO.png"></a> </span> 
+</div>
+</center>
+
+</div>
+		<!--Google analytics-->
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33943243-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<!--Google analytics-->
+	 
+	
+</body>	
+</html>	

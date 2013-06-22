@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  lastname: MyString
+  mobile: 1
+  birthday: 2013-06-21
+
+two:
+  name: 
+  lastname: MyString
+  mobile: 1
+  birthday: 2013-06-21
